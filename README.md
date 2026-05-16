@@ -1,37 +1,19 @@
 # Madeline Carlton Portfolio Site
 
-A simple static portfolio site for GitHub Pages.
+This version includes the seven current artwork images.
 
-## Files
+## Edit piece information
 
-- `index.html` — page content
-- `styles.css` — visual design
-- `images/` — put artwork photos here
+Open `index.html` and edit the title, medium, and short description inside each `<figcaption>`.
 
-## How to add artwork
+## Add more work
 
-Put image files inside `images/`, then replace a placeholder like:
+Put new images in `images/`, then copy and paste one of the existing `<figure class="piece">...</figure>` blocks.
 
-```html
-<div class="placeholder clay">Add image</div>
-```
+## Push updates
 
-with:
-
-```html
-<img class="art-image" src="images/my-artwork.jpg" alt="Short description of the artwork">
-```
-
-Then edit the title, medium, year, and description in the `figcaption`.
-
-## Custom domain
-
-After buying a domain, add it in GitHub:
-
-Repository → Settings → Pages → Custom domain
-
-GitHub will create or use a `CNAME` file. If you add it manually, the file should contain only the domain name, for example:
-
-```txt
-madelinecarlton.com
+```bat
+git add .
+git commit -m "Update portfolio work"
+git push
 ```
